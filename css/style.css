@@ -1,6 +1,8 @@
 /* general styles */
 body {
     background: #333333;   
+    margin: 0;
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   } 
 
   @font-face {
@@ -8,13 +10,128 @@ body {
     src: url(../fonts/Baskerville.ttc);
    }
 
-   .noMargin { margin: 0px; }
+   @font-face {
+    font-family: Loki;
+    src: url(../fonts/Loki-Regular.otf);
+    text-decoration: none;
+   }
 
-  h1, h2 { text-align: center; color: #e3e3e3; font-family: Baskerville;}
-  h1 { font-size: 3vw; }
-  h2 { font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  h1, h2 { text-align: center; letter-spacing: 1px; }
+  
+  h1 span.name { filter: drop-shadow(2px 2px 2px #333333); line-height: 69px; font-size: 3.5vh;}
+  
+  .tagline {  
+    background: #00000066;
+    padding: 15px 50px;
+    border: #ea4c3d solid 2px; 
+    font-size: 4vw; 
+    }
 
-  /* home page css */
+    .tagline span { filter: drop-shadow(1px 1px 2px #000000c7) }
+
+    h2 { font-size: 1.5vw; }
+
+  a { color: #257eb5; }
+  .noMargin { margin: 0px; }
+
+ /* theme colours */
+  .dark { color: #333333; }
+  .light { color:#e3e3e3; }
+  .aqua { color: #37b097; }
+  .yellow { color: #e7c41c; }
+  .red { color: #ea4c3d; }
+  .blue { color: #257db5; }
+ 
+
+  /* Header */
+  .logo {  
+    font-family: Loki;
+    font-size: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    margin-left: 4%;
+    font-weight: bold;
+  }
+
+  nav {
+    width: 100%;
+    background: #EFF0F3;
+    height: 70px;
+    position: fixed;
+  }
+ 
+nav ul { 
+  float: right; 
+  margin: 0 4%; 
+  font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  height: 70px;
+}
+ 
+ nav li { 
+  list-style-type: none; 
+  float: left;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 12px;
+  height: 70px;
+  line-height: 70px;
+}
+
+nav li a { text-decoration: none; }
+
+nav li:hover { background: #257db5; color:white;  }
+nav li:hover a { color:white; }
+
+.subMenu { 
+  display: none;
+  margin: 0;
+  position: absolute;
+  padding: 7px 2px;
+  width: 200px;
+  left: 0px;
+  top: 43px;
+}
+
+.subMenu a { 
+  color: white; 
+  margin-left: 15px;
+}
+
+.subMenu li {
+  height: 40px;
+  margin: 0;
+  float: none;
+  line-height: 40px;
+  background: #257db5;
+  left: -2px;
+  position: relative;
+}
+
+.subMenu li:hover { background: #37b097; }
+
+.subMenu li:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid white;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  display: list-item;
+  top: 16px;
+}
+
+li.dropDown { position: relative; }
+li.dropDown:hover .subMenu { display: block; }
+
+.titles { 
+  position: relative;
+  top: 50px; }
+
+/* home page css */
   .homeBannerContainer { 
     align-items: flex-end;
     min-height: 500px;
