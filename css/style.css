@@ -1,0 +1,29 @@
+/* general styles */
+body {
+    background: #333333;   
+  } 
+
+  @font-face {
+    font-family: Baskerville;
+    src: url(../fonts/Baskerville.ttc);
+   }
+
+   .noMargin { margin: 0px; }
+
+  h1, h2 { text-align: center; color: #e3e3e3; font-family: Baskerville;}
+  h1 { font-size: 3vw; }
+  h2 { font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+  /* home page css */
+  .homeBannerContainer { 
+    align-items: flex-end;
+    min-height: 500px;
+    align-content: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+
+  .homeBanner { min-height: 500px; position: absolute; top: 0; left: 0; width: 100%; background-position: center top; z-index: -1;}
+  .homeBanner.back { background-image: url("../images/back-layer.png"); }
+  .homeBanner.middle { background-image: url("../images/middle-layer.png"); }
+  .homeBanner.front { background-image: url("../images/front-layer.png"); }
