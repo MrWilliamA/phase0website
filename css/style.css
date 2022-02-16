@@ -5,31 +5,63 @@ body {
     font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   } 
 
-  @font-face {
-    font-family: Baskerville;
-    src: url(../fonts/Baskerville.ttc);
-   }
-
    @font-face {
     font-family: Loki;
     src: url(../fonts/Loki-Regular.otf);
     text-decoration: none;
    }
 
+   @font-face {
+    font-family: Italiano;
+    src: url(../fonts/Italianno-Regular.ttf);
+    text-decoration: none;
+   }
+
+   @font-face {
+    font-family: Neucha;
+    src: url(../fonts/Neucha-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Gideon_Roman;
+    src: url(../fonts/GideonRoman-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Akaya_Telivigala;
+    src: url(../fonts/AkayaTelivigala-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Fugaz;
+    src: url(../fonts/FugazOne-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Allan;
+    src: url(../fonts/Allan-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Saira;
+    src: url(../fonts/SairaStencilOne-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Fondamento;
+    src: url(../fonts/Fondamento-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Iceland;
+    src: url(../fonts/Iceland-Regular.ttf);
+    text-decoration: none;
+   }
+
+
   h1, h2 { text-align: center; letter-spacing: 1px; }
-  
-  h1 span.name { filter: drop-shadow(2px 2px 2px #333333); line-height: 69px; font-size: 3.5vh;}
-  
-  .tagline {  
-    background: #00000066;
-    padding: 15px 50px;
-    border: #ea4c3d solid 2px; 
-    font-size: 4vw; 
-    }
-
-    .tagline span { filter: drop-shadow(1px 1px 2px #000000c7) }
-
-    h2 { font-size: 1.5vw; }
+    
+  h2 { font-size: 1.5vw; }
 
   a { color: #257eb5; }
   .noMargin { margin: 0px; }
@@ -129,7 +161,9 @@ li.dropDown:hover .subMenu { display: block; }
 
 .titles { 
   position: relative;
-  top: 50px; }
+  top: 50px; 
+  font-family: 'Fugaz';
+}
 
 /* home page css */
   .homeBannerContainer { 
@@ -144,3 +178,32 @@ li.dropDown:hover .subMenu { display: block; }
   .homeBanner.back { background-image: url("../images/back-layer.png"); }
   .homeBanner.middle { background-image: url("../images/middle-layer.png"); }
   .homeBanner.front { background-image: url("../images/front-layer.png"); }
+
+  .name { 
+    position: relative;
+    top: 20px;
+    font-size: 35px;
+    background: black;
+    max-width: 300px;
+    margin: auto;
+    padding: 8px 10px;
+  }
+
+  .tagline {
+    max-width: 700px;
+    margin: auto;
+    padding: 8px 0 9px 0;
+    background: black;
+    position: relative;
+    top: 0px;
+    font-size: 35px;
+  }
+
+  .heading {  
+    background: #00000066;
+    padding: 15px 50px;
+    border: #ea4c3d solid 2px; 
+    font-size: 4vw; 
+    }
+
+  .heading span { filter: drop-shadow(1px 1px 2px #000000c7) }
