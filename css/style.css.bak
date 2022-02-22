@@ -3,7 +3,6 @@ body {
     background: #333333;   
     margin: 0;
     font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  
   } 
 
    @font-face {
@@ -12,47 +11,71 @@ body {
     text-decoration: none;
    }
 
-  
+   @font-face {
+    font-family: Italiano;
+    src: url(../fonts/Italianno-Regular.ttf);
+    text-decoration: none;
+   }
+
+   @font-face {
+    font-family: Neucha;
+    src: url(../fonts/Neucha-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Gideon_Roman;
+    src: url(../fonts/GideonRoman-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Akaya_Telivigala;
+    src: url(../fonts/AkayaTelivigala-Regular.ttf);
+    text-decoration: none;
+   }
    @font-face {
     font-family: Fugaz;
     src: url(../fonts/FugazOne-Regular.ttf);
     text-decoration: none;
    }
-  
-.mainContent { 
-  width: 85%;
-  max-width: 1200px; 
-  margin: auto;
-  padding-top: 50px;
-}
+   @font-face {
+    font-family: Allan;
+    src: url(../fonts/Allan-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Saira;
+    src: url(../fonts/SairaStencilOne-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Fondamento;
+    src: url(../fonts/Fondamento-Regular.ttf);
+    text-decoration: none;
+   }
+   @font-face {
+    font-family: Iceland;
+    src: url(../fonts/Iceland-Regular.ttf);
+    text-decoration: none;
+   }
 
-  h1, h2 { 
-    text-align: center; 
-    letter-spacing: 1px; 
-  }
+
+  h1, h2 { text-align: center; letter-spacing: 1px; }
     
   h2 { font-size: 1.5vw; }
 
   a { color: #257eb5; }
   .noMargin { margin: 0px; }
 
-  p { color: rgb(209, 209, 209); }
-
-/* theme colours */
+ /* theme colours */
   .dark { color: #333333; }
   .light { color:#e3e3e3; }
   .aqua { color: #37b097; }
   .yellow { color: #e7c41c; }
   .red { color: #ea4c3d; }
   .blue { color: #257db5; }
-
+ 
 
   /* Header */
-  .header { z-index: 9; 
-    position: absolute;
-    top: 0;
-  }
-  
   .logo {  
     font-family: Loki;
     font-size: 35px;
@@ -70,7 +93,7 @@ body {
     height: 70px;
     position: fixed;
   }
-
+ 
 nav ul { 
   float: right; 
   margin: 0 4%; 
@@ -78,7 +101,7 @@ nav ul {
   font-weight: bold;
   height: 70px;
 }
-
+ 
  nav li { 
   list-style-type: none; 
   float: left;
@@ -91,11 +114,7 @@ nav ul {
 
 nav li a { text-decoration: none; }
 
-nav li:hover { 
-  background: #257db5; 
-  color:white;  
-}
-
+nav li:hover { background: #257db5; color:white;  }
 nav li:hover a { color:white; }
 
 .subMenu { 
@@ -144,7 +163,6 @@ li.dropDown:hover .subMenu { display: block; }
   position: relative;
   top: 50px; 
   font-family: 'Fugaz';
- z-index: -1;
 }
 
 /* home page css */
@@ -156,17 +174,7 @@ li.dropDown:hover .subMenu { display: block; }
     justify-content: center;
   }
 
-  .homeBanner { min-height: 500px; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    background-position:
-    center top; 
-    z-index: -1; 
-    transition: transform 500ms ease-in-out;
-  }
-  
+  .homeBanner { min-height: 500px; position: absolute; top: 0; left: 0; width: 100%; background-position: center top; z-index: -1;}
   .homeBanner.back { background-image: url("../images/back-layer.png"); }
   .homeBanner.middle { background-image: url("../images/middle-layer.png"); }
   .homeBanner.front { background-image: url("../images/front-layer.png"); }
@@ -198,53 +206,4 @@ li.dropDown:hover .subMenu { display: block; }
     font-size: 4vw; 
     }
 
-    .introduction { 
-      text-align: center;
-      margin: 25px;
-      line-height: 25.5px;
-     }
-
-    .cards {
-      display: flex;
-      padding: 25px 0;
-    }
-
-    .singleCard {
-      flex: 1;
-      padding: 24px 2%;
-      text-align: center;
-      margin: 0 1%;
-      background: rgba(0, 0, 0, 0.438);
-      border-radius: 10px;  
-      overflow: hidden; 
-      cursor: pointer;
-      z-index: 9;
-    }
-
-    .singleCard:hover .colorDivider {
-      transform: scalex(4.5) scaleY(36);
-      transform-origin: 49px 1.5px;   
-      z-index:  -1;
-  } 
-
-    .colorDivider { 
-      width: 30%;
-      min-width: 70px;
-      height: 10px;
-      margin: auto;
-      border-radius: 5px;
-      transition: 0.3s ease;
-      z-index: -1;
-    }
-
-    .colorDivider.aqua { background: #37b097; } 
-    .colorDivider.yellow { background: #e7c41c; } 
-    .colorDivider.blue { background: #257db5;  } 
-
-    .cardTitle { 
-      color: white;
-      transform-style: preserve-3d;
-     }
-
-     .singleCard p { transform-style: preserve-3d; }
-    
+  .heading span { filter: drop-shadow(1px 1px 2px #000000c7) }
