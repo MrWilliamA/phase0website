@@ -26,7 +26,9 @@ body {
   padding-top: 50px;
 }
 
-  h1, h2 { 
+.pageContainer { margin: 50px 0; }
+
+  h1, h2, h3 { 
     text-align: center; 
     letter-spacing: 1px; 
   }
@@ -36,7 +38,7 @@ body {
   a { color: #257eb5; }
   .noMargin { margin: 0px; }
 
-  p { color: rgb(209, 209, 209); }
+  p { color: rgb(209, 209, 209); text-align: center; }
 
 /* theme colours */
   .dark { color: #333333; }
@@ -199,8 +201,7 @@ li.dropDown:hover .subMenu { display: block; }
     }
 
     .introduction { 
-      text-align: center;
-      margin: 25px;
+      margin: 50px 25px;
       line-height: 25.5px;
      }
 
@@ -212,21 +213,22 @@ li.dropDown:hover .subMenu { display: block; }
     .singleCard {
       flex: 1;
       padding: 24px 2%;
-      text-align: center;
       margin: 0 1%;
       background: rgba(0, 0, 0, 0.438);
       border-radius: 10px;  
       overflow: hidden; 
       cursor: pointer;
       z-index: 9;
+      text-align: center;
     }
 
-    .singleCard:hover .colorDivider {
-      transform: scalex(4.5) scaleY(36);
+   .singleCard:hover .colorDivider {
+      transform: scalex(4.5) scaleY(38);
       transform-origin: 49px 1.5px;   
       z-index:  -1;
-  } 
+  }  
 
+  
     .colorDivider { 
       width: 30%;
       min-width: 70px;
@@ -238,7 +240,7 @@ li.dropDown:hover .subMenu { display: block; }
     }
 
     .colorDivider.aqua { background: #37b097; } 
-    .colorDivider.yellow { background: #e7c41c; } 
+    .colorDivider.red { background: #ea4c3d; } 
     .colorDivider.blue { background: #257db5;  } 
 
     .cardTitle { 
@@ -247,4 +249,46 @@ li.dropDown:hover .subMenu { display: block; }
      }
 
      .singleCard p { transform-style: preserve-3d; }
-    
+
+     .cardBtn {
+      cursor: pointer;
+      padding: 8px 16px;
+      color: white;
+      border-image-slice: 1;
+      border-width: 4px;
+      font-family: 'Open Sans', 'arial';
+      font-weight: bold;
+      transform-style: preserve-3d;
+      border-radius: 20px;
+     }
+
+     .cardBtn.red { background: #ea4c3d; }
+
+     .cardBtn.blue { background: #257db5; }
+
+     .cardBtn.aqua { background: #37b097; }
+
+      .cardBtn:hover { filter: contrast(1.2); }
+
+
+     /* footer */
+     .subFooter { 
+       background: #4a4a4a;
+       padding: 14px;
+       margin-top: 50px;
+       text-align: center;
+       }
+
+     .subFooter img { 
+       width: 40px; 
+      filter: brightness(0.8); 
+      cursor: pointer;
+    }
+
+     .subFooter img:hover { filter: brightness(1); }
+
+     .largeFooter { 
+       line-height: 12px;
+       padding: 25px;
+       background: #242424;
+    }

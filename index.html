@@ -11,7 +11,7 @@
 </head>
 <body>
     
-<!-- begin header-->>
+<!-- begin header-->
     <section class="header">
     <div class="logo">  
         <a href="index.html">Warcher</a>
@@ -19,14 +19,14 @@
     <nav class="mainMenu">
         <ul>
             <li><a href="index.html" class="dark">Home</a></li>
-            <li><a href="index.html" class="dark">About Me</a></li>
+            <li><a href="./about.html" class="dark">About Me</a></li>
             <li class="dropDown dark">Portfolio
                <ul class="subMenu dark"> 
-                   <li><a href="index.html">Web Developer</a></li>
-                   <li><a href="index.html">Graphic Design</a></li>  
-            </ul> 
+                <li><a href="./developer.html">Web Developer</a></li>
+                <li><a href="./graphic.html">Graphic Design</a></li>  
+               </ul> 
             </li> 
-            <li><a href="index.html" class="dark">Contact</a></li>     
+            <li><a href="./contact.html" class="dark">Contact</a></li>     
         </ul>
     </nav>
 </section>
@@ -35,47 +35,60 @@
       <div class="homeBanner middle"></div>
       <div class="homeBanner front"></div>
       <div class="titles">
-     <h2 class="light name">WILL ARCHER</h2>
-      <h1 class="red noMargin heading"><span>WEBSITE CONSTRUCTION</span></h1> 
-      <h2 class="light tagline">THE RIGHT BUILDER FOR THE JOB</h2>
+        <h2 class="light name">WILL ARCHER</h2>
+        <h1 class="red noMargin heading"><span>WEBSITE CONSTRUCTION</span></h1> 
+        <h2 class="light tagline">THE RIGHT BUILDER FOR THE JOB</h2>
       </div>
   </section>
 
-  <!-- begin main page content-->>
+  <!-- begin main page content-->
 
   <section class="mainContent">
         <article class="introduction">
             <h3 class="light">Will Archer - Developer, Designer, Mentor</h3>
-            <p>I specialise in helping small businesses re-brand and set up an online presence. Whether you’re looking to redesign your website or just need help with an advertising brochure, business card, poster, or logo—I’m here to help.
-                
-                Want to know how? Give me a call on <a href="tel:0409 468 139">0409 468 139</a> or send me an <a href="mailto:will.archer@hotmail.com">email</a>.
-                
-                Quotes are free so don’t be shy, and thank you for your interest!</p>
+            <p>I specialise in helping small businesses re-brand and set up an online presence. Whether you’re looking to redesign your website or just need help with an advertising brochure, business card, poster, or logo—I’m here to help. Want to know how? Give me a call on <a href="tel:0409 468 139">0409 468 139</a> or send me an <a href="mailto:will.archer@hotmail.com">email</a>. Quotes are free so don’t be shy, and thank you for your interest!</p>
         </article>
         <article class="cards">
             <div class="singleCard">
-                <div class="colorDivider aqua"></div>         
+                <div class="colorDivider red"></div>         
                 <h3 class="cardTitle">Web Development</h3>
                 <p>Do you need a new website? Every good business needs an online presence to reach far and wide. Whether you need to spice up your old HTML website, or build a new one entirely, i am here to help.</p>
                 <p>Check out a few options to find the right website for you.</p>
+                <button class="cardBtn red" onclick="window.location.href='./developer.html'">Find Out More</button>
             </div>
             <div class="singleCard">
                 <div class="colorDivider blue"></div>
                 <h3 class="cardTitle">Graphic Design</h3>
-                <p>Expand your business with a brochure; or why not a poster? Better yet make it a comprehensive catalogue with your full range of products and services!</p>
+                <p>Expand your business with a brochure; or why not a poster? or window signage? Better yet make it a comprehensive catalogue with your full range of products and services!</p>
                 <p>With years of graphic design experience, i have the tools to make your business shine!</p>
+                <button class="cardBtn blue" onclick="window.location.href='./graphic.html'">Find Out More</button>
             </div>
             <div class="singleCard">
                 <div class="colorDivider aqua"></div>
                 <h3 class="cardTitle">Hire Me</h3>
-                <p>Do you need an experienced web and graphic designer to kickstart your new business? I specialise in small to medium business services, and i want to help.</p>
+                <p>Do you need an experienced website developer and/or graphic designer to kickstart your new business? I specialise in small to medium business services, and i want to help.</p>
                 <p>Please feel free to contact me for a recommendation, a quote, or simply a chat!</p>
+                <button class="cardBtn aqua" onclick="window.location.href='./contact.html'">Find Out More</button>
             </div>
 
         </article>
 </section>
 
-<!-- script for making header parallax-->>
+<section class="footer">
+<div class="subFooter">
+    <a href="https://www.instagram.com/will.archer.562/"><img src="./images/instagram.png" alt="Instagram"></a>
+    <a href="https://www.facebook.com/will.archer.562"><img src="./images/facebook-icon.png" alt="Facebook"></a>
+    <a href="https://github.com/MrWilliamA"><img src="./images/github-icon.png" alt="Github"></a>
+    <a href="https://www.linkedin.com/in/will-archer-792b747a/"><img src="./images/linked-in-icon.png" alt="Linked In"></a>
+</div>
+<div class="largeFooter">
+    <p>Designed & Built by Will Archer</p>
+    <p><a href="mailto:will.archer@hotmail.com">Contact me</a></p>
+</div>
+
+</section>
+
+<!-- script for making header parallax-->
 <script>
 $( document ).ready(function() {
     window.addEventListener("scroll", function() {
